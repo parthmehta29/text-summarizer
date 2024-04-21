@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Summarizer App</title>
+  </head>
+  <body>
+    <h1>Enter some text:</h1>
+    <form method="post">
+      <textarea name="user_text" rows="10" cols="50"></textarea>
+      <br>
+      <input type="submit" value="Summarize">
+    </form>
+    {% if user_text %}
+    <h2>Original Text:</h2>
+    <p>{{ user_text }}</p>
+    <h2>Summarized Text:</h2>
+    <p>{{ summarized_text }}</p>
+    {% endif %}
+  </body>
+</html>
